@@ -1,0 +1,23 @@
+<br>
+<br>
+<br>
+<br>
+<div class="row text-center">
+    <h1 class="card-title-center">GOVERNADORES ELEITOS</h1>
+</div>
+<br>
+<div class="container main-container">
+    <div class="row text-center">
+        <div *ngFor="let governador of governadores" class="col-md-4" style="padding-bottom: 30px;">
+            <div class="card h-100">
+                <br>
+                <h3 class="card-title">{{ governador.nome}}</h3>
+                <h5 class="card-text">Partido: {{ governador.siglaDoPartido }}</h5>
+                <h5 class="card-text">{{ governador.nomeDoPartido }}</h5>
+                <h5 class="card-text">Projetos de Lei: {{ governador.projetosDeLei }}</h5>
+                <h5 class="card-text">Processos: {{ governador.processos }}</h5>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>

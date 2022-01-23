@@ -1,0 +1,24 @@
+<br>
+<br>
+<br>
+<br>
+<div class="row text-center">
+    <h1 class="card-title-center">DEPUTADOS ELEITOS</h1>
+</div>
+<br>
+<div class="container main-container">
+    <div class="row text-center">
+        <div *ngFor="let deputado of deputados" class="col-md-4" style="padding-bottom: 30px;">
+            <div class="card h-100">
+                <br>
+                <h3 class="card-title">{{ deputado.nome}}</h3>
+                <h5 class="card-text">Partido: {{ deputado.siglaDoPartido }}</h5>
+                <h5 class="card-text">{{ deputado.nomeDoPartido }}</h5>
+                <h5 class="card-text">Projetos de Lei: {{ deputado.projetosDeLei }}</h5>
+                <h5 class="card-text">Processos: {{ deputado.processos }}</h5>
+                <h5 class="card-text">Representante: {{ deputado.representante }}</h5>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>

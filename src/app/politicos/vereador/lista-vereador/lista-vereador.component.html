@@ -1,0 +1,23 @@
+<br>
+<br>
+<br>
+<br>
+<div class="row text-center">
+    <h1 class="card-title-center">VEREADORES ELEITOS</h1>
+</div>
+<br>
+<div class="container main-container">
+    <div class="row text-center">
+        <div *ngFor="let vereador of vereadores" class="col-md-4" style="padding-bottom: 30px;">
+            <div class="card h-100">
+                <br>
+                <h3 class="card-title">{{ vereador.nome}}</h3>
+                <h5 class="card-text">Partido: {{ vereador.siglaDoPartido }}</h5>
+                <h5 class="card-text">{{ vereador.nomeDoPartido }}</h5>
+                <h5 class="card-text">Projetos de Lei: {{ vereador.projetosDeLei }}</h5>
+                <h5 class="card-text">Processos: {{ vereador.processos }}</h5>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
